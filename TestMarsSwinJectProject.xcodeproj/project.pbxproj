@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E84CA43AA45224D0CE43784 /* JupiterPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B2200A572003C96CE1E6B /* JupiterPresenterProtocol.swift */; };
 		1299AD020B47B980545C33B6 /* Pods_TestMarsSwinJectProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0F455A4556D391F07A6B29 /* Pods_TestMarsSwinJectProject.framework */; };
-		3A5FC39E8E961F1E5A1B0A69 /* JupiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E0AD6BCEBBC174C0B884C /* JupiterViewController.swift */; };
 		3DF1274241D27B8B8CA10132 /* marsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C071C3BADF0CC3D818D5 /* marsRouter.swift */; };
-		441703727B326F4FAB7BCE0B /* JupiterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8090DD9755467D43C19722E /* JupiterViewProtocol.swift */; };
 		5089DAA67AE978DA487D9943 /* marsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F36F270AA050E83F9AC30 /* marsRouterProtocol.swift */; };
-		7250E8DCE70F5FE419D473EC /* JupiterInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BBAF02534EABA0090C11AB /* JupiterInteractorProtocol.swift */; };
 		78FC16F27C6A76FFFAA7C07F /* marsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5512A7B9BC6CBAADA007440 /* marsInteractorProtocol.swift */; };
 		8BF3A6F57D54094FDD85DF6E /* marsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581B77AAC61F914949470B4 /* marsViewController.swift */; };
-		8FA03C4857E7A5C0F41DE47D /* JupiterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1DED07217D9470BCD6745 /* JupiterRouter.swift */; };
-		974E79846048EDACA465A486 /* JupiterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6DACC91EE03D4DD02DC08 /* JupiterPresenter.swift */; };
-		9D3C8B8BB1E1899EA34141E2 /* JupiterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08CCCBBBA78C2C2BFCCE2F /* JupiterConfigurator.swift */; };
 		BAFD907E40483FF47A48025B /* marsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC9A27D6274E5044E1693A /* marsViewController.xib */; };
-		BB871FD5351ACAD835D18BF3 /* JupiterRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49697B4E510675DE8676799 /* JupiterRouterProtocol.swift */; };
 		C0BF5CB58E7B6C5F471C9840 /* marsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7107D7937E4A84647472 /* marsPresenter.swift */; };
 		CE15B41D25F3B1E000910A58 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15B41B25F3B1E000910A58 /* TableViewCell.swift */; };
 		CE15B41E25F3B1E000910A58 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE15B41C25F3B1E000910A58 /* TableViewCell.xib */; };
@@ -46,32 +38,22 @@
 		CED2600725F241670010B7E3 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2600625F241670010B7E3 /* ServiceContainer.swift */; };
 		CED2600B25F241A30010B7E3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2600A25F241A30010B7E3 /* CoreDataManager.swift */; };
 		D6AF60589D3DF16FBD88DBB2 /* marsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B77B70C2B85070165066C1 /* marsViewProtocol.swift */; };
-		DB39C224F17D488DC5772585 /* JupiterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC55CB3C32FC9972B54DDE /* JupiterViewController.xib */; };
 		DF022DC03A5840E742C1EC3F /* marsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3CCF3242D6D448614D3BB /* marsInteractor.swift */; };
 		E43F3EBADD5242E73472B14C /* marsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED571E3E06EBFA3A5C203385 /* marsConfigurator.swift */; };
-		E90530132BD7E7DCE112A72F /* JupiterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D64C541883884C0DB133E5E /* JupiterInteractor.swift */; };
 		F191B8AD3BC61E418BCB4101 /* marsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B13620FE52684DF7B06013 /* marsPresenterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B0F455A4556D391F07A6B29 /* Pods_TestMarsSwinJectProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMarsSwinJectProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BC6DACC91EE03D4DD02DC08 /* JupiterPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterPresenter.swift; sourceTree = "<group>"; };
 		10F7C071C3BADF0CC3D818D5 /* marsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsRouter.swift; sourceTree = "<group>"; };
 		41B13620FE52684DF7B06013 /* marsPresenterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsPresenterProtocol.swift; sourceTree = "<group>"; };
 		4F22BBED9FE857BFAF4D8C6F /* Pods-TestMarsSwinJectProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMarsSwinJectProject.release.xcconfig"; path = "Target Support Files/Pods-TestMarsSwinJectProject/Pods-TestMarsSwinJectProject.release.xcconfig"; sourceTree = "<group>"; };
-		6D64C541883884C0DB133E5E /* JupiterInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterInteractor.swift; sourceTree = "<group>"; };
-		7BAC55CB3C32FC9972B54DDE /* JupiterViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = JupiterViewController.xib; sourceTree = "<group>"; };
-		86BBAF02534EABA0090C11AB /* JupiterInteractorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterInteractorProtocol.swift; sourceTree = "<group>"; };
-		8F08CCCBBBA78C2C2BFCCE2F /* JupiterConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterConfigurator.swift; sourceTree = "<group>"; };
 		938BE43FCBD3B00EF73974A4 /* Pods-TestMarsSwinJectProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMarsSwinJectProject.debug.xcconfig"; path = "Target Support Files/Pods-TestMarsSwinJectProject/Pods-TestMarsSwinJectProject.debug.xcconfig"; sourceTree = "<group>"; };
 		960F36F270AA050E83F9AC30 /* marsRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsRouterProtocol.swift; sourceTree = "<group>"; };
-		962E0AD6BCEBBC174C0B884C /* JupiterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterViewController.swift; sourceTree = "<group>"; };
 		9CFC9A27D6274E5044E1693A /* marsViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = marsViewController.xib; sourceTree = "<group>"; };
 		B581B77AAC61F914949470B4 /* marsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsViewController.swift; sourceTree = "<group>"; };
 		B6CD7107D7937E4A84647472 /* marsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsPresenter.swift; sourceTree = "<group>"; };
-		BE5B2200A572003C96CE1E6B /* JupiterPresenterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterPresenterProtocol.swift; sourceTree = "<group>"; };
 		C5512A7B9BC6CBAADA007440 /* marsInteractorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsInteractorProtocol.swift; sourceTree = "<group>"; };
-		C8E1DED07217D9470BCD6745 /* JupiterRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterRouter.swift; sourceTree = "<group>"; };
 		CBF3CCF3242D6D448614D3BB /* marsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsInteractor.swift; sourceTree = "<group>"; };
 		CE15B41B25F3B1E000910A58 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CE15B41C25F3B1E000910A58 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -98,8 +80,6 @@
 		CED2600125F240FF0010B7E3 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
 		CED2600625F241670010B7E3 /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
 		CED2600A25F241A30010B7E3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		D49697B4E510675DE8676799 /* JupiterRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterRouterProtocol.swift; sourceTree = "<group>"; };
-		D8090DD9755467D43C19722E /* JupiterViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JupiterViewProtocol.swift; sourceTree = "<group>"; };
 		ED571E3E06EBFA3A5C203385 /* marsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsConfigurator.swift; sourceTree = "<group>"; };
 		F3B77B70C2B85070165066C1 /* marsViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = marsViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,15 +104,6 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		2B40D193E69B505D3751865F /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				86BBAF02534EABA0090C11AB /* JupiterInteractorProtocol.swift */,
-				6D64C541883884C0DB133E5E /* JupiterInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		49E597F642095CBBB2E5BD7F /* mars */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,18 +126,6 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		5901A297BFFFCBFC5EAD6E60 /* Jupiter */ = {
-			isa = PBXGroup;
-			children = (
-				DEB47D5AEBCAB726AAC8E5BD /* View */,
-				C5A93D1BEF532C057BDF12F8 /* Presenter */,
-				2B40D193E69B505D3751865F /* Interactor */,
-				6D00F1CAFB3EBF30796673AD /* Router */,
-				9B74BC7678049AB9AD3D5889 /* Configurator */,
-			);
-			path = Jupiter;
-			sourceTree = "<group>";
-		};
 		59FC6DE831B47E3F59979834 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,23 +133,6 @@
 				4F22BBED9FE857BFAF4D8C6F /* Pods-TestMarsSwinJectProject.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		6D00F1CAFB3EBF30796673AD /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				D49697B4E510675DE8676799 /* JupiterRouterProtocol.swift */,
-				C8E1DED07217D9470BCD6745 /* JupiterRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		9B74BC7678049AB9AD3D5889 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				8F08CCCBBBA78C2C2BFCCE2F /* JupiterConfigurator.swift */,
-			);
-			path = Configurator;
 			sourceTree = "<group>";
 		};
 		A23FEB42B7FE1FBB94C823E2 /* View */ = {
@@ -207,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				49E597F642095CBBB2E5BD7F /* mars */,
-				5901A297BFFFCBFC5EAD6E60 /* Jupiter */,
 			);
 			path = AppLayer;
 			sourceTree = "<group>";
@@ -219,15 +160,6 @@
 				10F7C071C3BADF0CC3D818D5 /* marsRouter.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		C5A93D1BEF532C057BDF12F8 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				BE5B2200A572003C96CE1E6B /* JupiterPresenterProtocol.swift */,
-				0BC6DACC91EE03D4DD02DC08 /* JupiterPresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CE15B41A25F3B1CA00910A58 /* Cell */ = {
@@ -375,16 +307,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEB47D5AEBCAB726AAC8E5BD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D8090DD9755467D43C19722E /* JupiterViewProtocol.swift */,
-				962E0AD6BCEBBC174C0B884C /* JupiterViewController.swift */,
-				7BAC55CB3C32FC9972B54DDE /* JupiterViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		EE033ED22B2E4B264D4F028B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,7 +380,6 @@
 				CED25FC325F22D800010B7E3 /* Assets.xcassets in Resources */,
 				BAFD907E40483FF47A48025B /* marsViewController.xib in Resources */,
 				CE15B44625F427CE00910A58 /* LocalizebleStrings.strings in Resources */,
-				DB39C224F17D488DC5772585 /* JupiterViewController.xib in Resources */,
 				CE15B43125F41DE800910A58 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,15 +460,6 @@
 				3DF1274241D27B8B8CA10132 /* marsRouter.swift in Sources */,
 				CED25FFB25F240B70010B7E3 /* ResponceModel.swift in Sources */,
 				E43F3EBADD5242E73472B14C /* marsConfigurator.swift in Sources */,
-				441703727B326F4FAB7BCE0B /* JupiterViewProtocol.swift in Sources */,
-				3A5FC39E8E961F1E5A1B0A69 /* JupiterViewController.swift in Sources */,
-				0E84CA43AA45224D0CE43784 /* JupiterPresenterProtocol.swift in Sources */,
-				974E79846048EDACA465A486 /* JupiterPresenter.swift in Sources */,
-				7250E8DCE70F5FE419D473EC /* JupiterInteractorProtocol.swift in Sources */,
-				E90530132BD7E7DCE112A72F /* JupiterInteractor.swift in Sources */,
-				BB871FD5351ACAD835D18BF3 /* JupiterRouterProtocol.swift in Sources */,
-				8FA03C4857E7A5C0F41DE47D /* JupiterRouter.swift in Sources */,
-				9D3C8B8BB1E1899EA34141E2 /* JupiterConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
