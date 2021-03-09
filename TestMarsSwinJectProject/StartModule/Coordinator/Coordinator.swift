@@ -14,7 +14,8 @@ class Coordinator{
     func display(confViews: ConfiguratorView) {
         confViews.assemble(container: Container())
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = confViews.getView()
+        let controller = UINavigationController(rootViewController: confViews.getView())
+        self.window?.rootViewController = controller
         self.window?.makeKeyAndVisible()
     }
 }

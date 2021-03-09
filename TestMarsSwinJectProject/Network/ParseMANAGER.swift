@@ -8,23 +8,32 @@
 import Foundation
 
 protocol ParseManagerProtocol{
-    func parseData(complession: @escaping(ResponceModel)->())
+func parseData<T: Codable>(params: [String: Any], url: String, responceModel: T.Type,
+                           errorComplession: @escaping(Error)->(), complession: @escaping (T) -> ())
 }
 
 class ParseManager: ParseManagerProtocol{
+  
+    
     var networkManager: NetworkManagerProtocol{
         ServiceContainer.shared.resolve(_protocol: NetworkManagerProtocol.self)!
     }
     
-    func parseData(complession: @escaping(ResponceModel)->()){
-        networkManager.getData { (responce) in
-            guard let data = responce.data else {return}
-            do{
-            let decoded = try JSONDecoder().decode(ResponceModel.self, from: data)
-                complession(decoded)
-            } catch {
-                print (error.localizedDescription)
-            }
-        }
+    
+    func parseData<T: Codable>(params: [String: Any], url: String,
+                               responceModel: T.Type,
+                               errorComplession: @escaping(Error)->(),
+                               complession: @escaping (T) -> ()) {
+        networkManager.getData(params: params, url: url) { (responce) in
+                        guard let data = responce.data else {return}
+                        do{
+                        let decoded = try JSONDecoder().decode(responceModel.self, from: data)
+                            complession(decoded)
+                        } catch {
+                            let error = error as Error
+                            errorComplession(error)
+                            
+                        }
+    }
     }
 }

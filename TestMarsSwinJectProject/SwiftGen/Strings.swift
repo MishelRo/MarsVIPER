@@ -10,10 +10,20 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// please enter the latitude and longitude
+  internal static let coordinateMessage = L10n.tr("LocalizebleStrings", "CoordinateMessage")
+  /// Enter Cordinates
+  internal static let cordinatesWarnings = L10n.tr("LocalizebleStrings", "CordinatesWarnings")
   /// Вы удаляете изображение, далее оно не будет показанно в списке фотографий. Продолжить?
   internal static let deletedMessage = L10n.tr("LocalizebleStrings", "deletedMessage")
   /// Данное изображение будет удаленно
   internal static let deletedWarning = L10n.tr("LocalizebleStrings", "deletedWarning")
+  /// EarthPhotos
+  internal static let ePhotos = L10n.tr("LocalizebleStrings", "ePhotos")
+  /// Error was occured
+  internal static let error = L10n.tr("LocalizebleStrings", "Error")
+  /// MarsPhotos
+  internal static let mPhotos = L10n.tr("LocalizebleStrings", "mPhotos")
   /// Welcomesss
   internal static let welcome = L10n.tr("LocalizebleStrings", "Welcome")
 }

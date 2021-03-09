@@ -40,13 +40,24 @@ final class marsPresenter: marsPresenterFromViewProtocol {
                 self.view.reloadData()
             }
         } else {
-            parseDataManager.parseData { [weak self]photos in
+            parseDataManager.parseData(params: Constants.paramsMarsPhoto,
+                                       url: Constants.url,
+                                       responceModel: MarsResponceModel.self){ [weak self](error) in
+                let alert =  AlertManager().getAlert(title: L10n.error,
+                                                     message: error.localizedDescription,
+                                                     alertTextField: false,
+                                                     secondAlertTextField: false) { (_, _) in}
+                    complessionLat: { (_) in}
+                    complession: { }
+                                        self?.view.presentMarsAlert(alert: alert)
+            } complession: { [weak self]photos in
                 guard let self = self else {return}
                 self.photo = self.filtredPhotos(photoArray: photos.photos)
                 self.coreDataManager.saveData(photo: photos.photos)
                 self.view.reloadData()
                 user.set(true, forKey: Constants.firstLaunchKey)
             }
+            
         }
     }
     

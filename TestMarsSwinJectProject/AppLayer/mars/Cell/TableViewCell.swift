@@ -10,6 +10,9 @@ import SDWebImage
 class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var langCordinate: UITextField!
+    @IBOutlet weak var latCordinate: UITextField!
+    
     static var reusableId = "Cell"
     
     override func awakeFromNib() {

@@ -13,7 +13,7 @@ import Foundation
 class MainStart: MainProtocol{
     
     func start() {
-        Coordinator.shared.display(confViews: marsConfigurator())
+        Coordinator.shared.display(confViews: MainModuleConfigurator())
     }
 }
 

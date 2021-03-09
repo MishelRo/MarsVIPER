@@ -12,5 +12,10 @@ class Constants{
     static var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos"
     static var userKey = "DeletedKey"
     static var firstLaunchKey = "FirstLaunch"
+    static var urlEarth = "https://api.nasa.gov/planetary/earth/assets?"
+    static var paramsMarsPhoto = ["sol": 1000,
+                  "page": 1,
+                  "api_key": Constants.api_key] as [String : Any]
+   
 }
 

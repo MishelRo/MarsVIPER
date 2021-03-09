@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 import SimpleImageViewer
 final class marsViewController: UIViewController, marsViewProtocol{
- 
+    
     // MARK: - Public Properties
     var presenter: marsPresenterFromViewProtocol!
     @IBOutlet weak var tableView: UITableView!
@@ -21,17 +21,26 @@ final class marsViewController: UIViewController, marsViewProtocol{
         tableView.delegate = self
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.reusableId)
         self.view.addGestureRecognizer(longPressRecognizer())
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(barbuttonAction(sender:)))
+        
+    }
+    func presentMarsAlert(alert: UIAlertController) {
+        present(alert, animated: true, completion: nil)
     }
     
     func reloadData() {
         tableView.reloadData()
     }
     
+    @objc func barbuttonAction(sender: UIBarButtonItem){
+        Coordinator.shared.display(confViews: MainModuleConfigurator())
+    }
+    
     //MARK: - TableView
 }
 extension marsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return  presenter.photo.count
+        return  presenter.photo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,10 +56,7 @@ extension marsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
-        let images = cell.imageView
-        let conf = ImageViewerConfiguration { (image) in
-            image.image = images?.image}
-        let imageVC = ImageViewerController(configuration: conf)
+        let imageVC = SimpleImageViewer().showImage(cell: cell)
         present(imageVC, animated: true, completion: nil)
     }
     
@@ -64,13 +70,18 @@ extension marsViewController: UITableViewDelegate, UITableViewDataSource {
         if let indexPath = self.tableView.indexPathForRow(at: lock) {
             let id = presenter.photo[indexPath.row].id
             let alert = AlertManager().getAlert(title: L10n.deletedWarning,
-                                                message: L10n.deletedMessage) {
-            self.presenter.ignoredPhotos(id: id)}
-        present(alert, animated: true, completion: nil)
+                                                message: L10n.deletedMessage,
+                                                alertTextField: false,
+                                                secondAlertTextField: false) { _,_  in }
+                complessionLat: { _ in}
+                complession: {
+                    self.presenter.ignoredPhotos(id: id)
+                }
+            present(alert, animated: true, completion: nil)
         }
-      
+        
     }
     
- }
+}
 
 

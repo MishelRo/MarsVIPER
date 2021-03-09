@@ -6,8 +6,9 @@
 //  Copyright © 2021 Misha. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol marsViewProtocol: class {
    func reloadData()
+   func presentMarsAlert(alert: UIAlertController)
 }
